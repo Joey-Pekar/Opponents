@@ -1,0 +1,66 @@
+$theme-colors: (
+    "primary": #E50F17
+);
+
+$navbar-color: #004C4C;
+$page-background: #560319;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Varela+Round&display=swap');
+
+.topnav {
+
+    background-color: $navbar-color;
+    box-shadow: 0.2rem 0.02rem black;
+
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+  background-color: $page-background;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Set the fixed height of the footer here */
+  line-height: 30px; /* Vertically center the text there */
+  background-color: #282828;
+  padding-top: 10px;
+}
+
+.dropdown-menu, .dropdown-item, .dropdown-item:hover, .dropdown-item:active, .dropdown-item.active {
+  background-color: $navbar-color;
+  color: theme-color("light");
+}
+
+.dropdown-item:hover {
+  background-color: #003C3C;
+}
+
+.footer-link {
+
+  color: #d7fffe;
+
+}
+
+img.focus {
+
+  box-shadow: 0.2rem 0.2rem 0.2rem black;
+  border-radius: 0.05rem
+
+}
+
+.homeHeader {
+  background-color: theme-color("primary");
+  color: theme-color("light");
+  font-family: 'Lobster Two', cursive;
+
+}
+
+p, a {
+  font-family: 'Varela Round', sans-serif;
+}

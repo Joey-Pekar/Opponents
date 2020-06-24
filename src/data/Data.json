@@ -1,0 +1,54 @@
+{
+    "Characteristics": [
+        "Brawn",
+        "Agility",
+        "Intellect",
+        "Cunning",
+        "Willpower",
+        "Presence"
+    ],
+    "Skills": {
+        "General": [
+            "Alchemy",
+            "Astrocartography",
+            "Athletics",
+            "Computers",
+            "Cool",
+            "Coordination",
+            "Discipline",
+            "Driving",
+            "Mechanics",
+            "Medicine",
+            "Operating",
+            "Perception",
+            "Piloting",
+            "Resilience",
+            "Riding",
+            "Skullduggery",
+            "Stealth",
+            "Streetwise",
+            "Survival",
+            "Vigilance"
+        ],
+        "Combat": [
+            "Brawl",
+            "Gunnery",
+            "Melee",
+            "Melee-Light",
+            "Melee-Heavy",
+            "Ranged",
+            "Ranged-Light",
+            "Ranged-Heavy"
+        ],
+        "Social": [
+            "Charm",
+            "Coercion",
+            "Deception",
+            "Leadership",
+            "Negotiation"
+        ],
+        "Knowledge": [
+            "Knowledge"
+        ]
+    }
+}
