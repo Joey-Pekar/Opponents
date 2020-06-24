@@ -21,6 +21,10 @@ const StatBlockPDF = (props) => {
         },
         normalText: {
             fontSize: 14
+        },
+        listText: {
+            fontSize: 12,
+            marginRight: 10
         }
     });
 
@@ -28,15 +32,15 @@ const StatBlockPDF = (props) => {
         <Text style={{ fontSize: 12, marginRight: 10 }}>{characteristic}: {value}</Text>
     );
 
-    const skillList = Object.entries(props.stats.Skills).filter(([skill, value]) => value > 0).map(([skill, value]) =>     
-        
+    const skillList = Object.entries(props.stats.Skills).filter(([skill, value]) => value > 0).map(([skill, value]) =>
+
         <Text style={{ fontSize: 12, marginRight: 10 }}>{skill}: {value}</Text>
 
     );
 
-    const Gap = (() => 
+    const Gap = (() =>
 
-        <View style={{marginHorizontal: 25, marginVertical: 5}}></View>
+        <View style={{ marginHorizontal: 25, marginVertical: 5 }}></View>
 
     );
 
@@ -49,16 +53,28 @@ const StatBlockPDF = (props) => {
                 </View>
                 <Gap />
                 <View style={styles.section}>
+                    <Text style={styles.listText}>Soak: {props.stats.Soak}</Text>
+                </View>
+                <View style={styles.listSection}>
+                    <Text style={styles.listText}>Wound Threshold: {props.stats.Wounds}</Text>
+                    <Text style={styles.listText}>Strain Threshold: {props.stats.Strain}</Text>
+                </View>
+                <View style={styles.listSection}>
+                    <Text style={styles.listText}>Melee Defense: {props.stats.MeleeDef}</Text>
+                    <Text style={styles.listText}>Ranged Defense: {props.stats.RangedDef}</Text>
+                </View>
+                <Gap />
+                <View style={styles.section}>
                     <Text style={styles.normalText}>Characteristics: </Text>
                 </View>
-                <View style={styles.listSection}>                   
+                <View style={styles.listSection}>
                     {charList}
                 </View>
                 <Gap />
                 <View style={styles.section}>
                     <Text style={styles.normalText}>Skills: </Text>
                 </View>
-                <View style={{marginHorizontal: 35}} wrap={false}>                   
+                <View style={{ marginHorizontal: 35 }} wrap={false}>
                     {skillList}
                 </View>
             </Page>
